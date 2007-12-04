@@ -1,7 +1,7 @@
 %define rname browse-kill-ring
 %define name emacs-%{rname}
 %define version 1.3
-%define release 4mdk
+%define release  %mkrel 4
 
 %define flavor emacs xemacs
 
