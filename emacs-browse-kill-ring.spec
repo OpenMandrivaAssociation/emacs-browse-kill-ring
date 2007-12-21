@@ -13,6 +13,7 @@ Source0: %{rname}.el
 Source1: %{name}-autostart.el
 License: GPL
 Group: Editors
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Prefix: %{_prefix}
 BuildRequires: %{flavor}
 BuildRequires: emacs-bin
