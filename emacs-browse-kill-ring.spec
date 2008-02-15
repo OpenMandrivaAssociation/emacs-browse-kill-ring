@@ -1,25 +1,21 @@
 %define rname browse-kill-ring
-%define name emacs-%{rname}
-%define version 1.3
-%define release  %mkrel 4
 
 %define flavor emacs xemacs
 
-Summary: Interactively insert items from kill-ring
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{rname}.el
-Source1: %{name}-autostart.el
-License: GPL
-Group: Editors
-BuildRoot: %{_tmppath}/%{name}-buildroot
-Prefix: %{_prefix}
-BuildRequires: %{flavor}
-BuildRequires: emacs-bin
-BuildRequires: perl
-BuildArch:     noarch
-URL: http://opensource.cis.ohio-state.edu/~hurley/
+Summary:	Interactively insert items from kill-ring
+Name:		emacs-%{rname}
+Version:	1.3
+Release:	%mkrel 5
+Source0:	%{rname}.el
+Source1:	%{name}-autostart.el
+License:	GPLv2+
+Group:		Editors
+BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	%{flavor}
+BuildRequires:	emacs-bin
+BuildRequires:	perl
+BuildArch:	noarch
+URL:		http://www.todesschaf.org/projects/bkr.html
 
 %description
 Ever feel that 'C-y M-y M-y M-y ...' is not a great way of trying
@@ -41,7 +37,7 @@ done
 perl -n -e 'last if /^\(/;last if /^;;; Code/; s|^([;])+\s||; print' < %{SOURCE0} > DOCUMENTATION
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 for i in %{flavor};do
 mkdir -p %{buildroot}%{_datadir}/$i/site-lisp/
@@ -57,7 +53,7 @@ EOF
 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
