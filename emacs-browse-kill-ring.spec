@@ -5,7 +5,7 @@
 Summary:	Interactively insert items from kill-ring
 Name:		emacs-%{rname}
 Version:	1.3
-Release:	%mkrel 5
+Release:	%mkrel 7
 Source0:	%{rname}.el
 Source1:	%{name}-autostart.el
 License:	GPLv2+
