@@ -61,3 +61,61 @@ rm -rf %{buildroot}
 %config(noreplace) /etc/emacs/site-start.d/%{name}.el
 %{_datadir}/*/site-lisp/*el*
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 1.3-9mdv2011.0
++ Revision: 618047
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 03 2009 Thierry Vignaud <tv@mandriva.org> 1.3-8mdv2010.0
++ Revision: 428555
+- rebuild
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 1.3-7mdv2009.0
++ Revision: 244697
+- rebuild
+
+* Fri Feb 15 2008 Adam Williamson <awilliamson@mandriva.org> 1.3-5mdv2008.1
++ Revision: 168717
+- rebuild for new era
+- new URL
+- new license policy
+- minor spec clean
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - use %%mkrel
+    - import emacs-browse-kill-ring
+
+
+* Fri Apr 29 2005 Thierry Vignaud <tvignaud@mandrakesoft.com> 1.3-4mdk
+- rebuild for latest emacs
+
+* Fri Feb 20 2004 Lenny Cartier <lenny@mandrakesoft.com> 1.3-3mdk
+- rebuild
+
+* Tue Jan 21 2003 Thierry Vignaud <tvignaud@mandrakesoft.com> 1.3-2mdk
+- rebuild for latest emacs
+
+* Tue Jan 14 2003 Chmouel Boudjnah <chmouel@mandrakesoft.com> 1.3-1mdk
+- Adjust Documentation generation.
+- Bump to version 1.3.
+
+* Fri Jun 21 2002 Götz Waschk <waschk@linux-mandrake.com> 1.0-2mdk
+- replace Copyright by License
+- add URL
+- buildarch noarch
+- buildrequires emacs-bin
+
+* Tue Oct  2 2001 Chmouel Boudjnah <chmouel@mandrakesoft.com> 1.0-1mdk
+- 1.0.
+
+* Tue May 29 2001 Chmouel Boudjnah <chmouel@mandrakesoft.com> 0.8-1mdk
+- First version.
+
+
+# end of file
