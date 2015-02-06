@@ -3,7 +3,7 @@
 Summary:	Interactively insert items from kill-ring
 Name:		emacs-%{rname}
 Version:	1.3
-Release:	10
+Release:	11
 License:	GPLv2+
 Group:		Editors
 Url:		http://www.todesschaf.org/projects/bkr.html
