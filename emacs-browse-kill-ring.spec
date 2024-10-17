@@ -6,7 +6,7 @@ Version:	1.3
 Release:	11
 License:	GPLv2+
 Group:		Editors
-Url:		http://www.todesschaf.org/projects/bkr.html
+Url:		https://www.todesschaf.org/projects/bkr.html
 Source0:	%{rname}.el
 Source1:	%{name}-autostart.el
 BuildRequires:	emacs
